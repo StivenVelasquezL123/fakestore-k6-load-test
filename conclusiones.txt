@@ -1,0 +1,7 @@
+CONCLUSIONES DEL SCRIPT DE CARGA
+
+La solución implementada consiste en una prueba de carga del servicio de login utilizando k6, con parametrización de credenciales desde un archivo CSV y validaciones de rendimiento según los requisitos del ejercicio. El script está diseñado para generar una carga constante de 20 TPS durante cinco minutos, evaluando la respuesta HTTP, la presencia del token, la latencia máxima y la tasa de errores.
+
+Durante la validación práctica, la API objetivo no respondió correctamente, reportando un estado de "Web server is down" y un error 521, por lo que no fue posible verificar el cumplimiento de los umbrales de rendimiento en este entorno. Esto indica que el problema es externo al código del ejercicio y que la prueba debe ejecutarse nuevamente cuando el servicio esté disponible.
+
+En consecuencia, la estructura del proyecto y la lógica de carga quedan preparadas para una ejecución correcta, pero la conclusión definitiva de desempeño dependerá del resultado real de la API objetivo cuando esta vuelva a estar operativa.
